@@ -4,6 +4,8 @@ A modern stopwatch application built with React featuring precise timing functio
 
 ## LIVE Preview: https://stropwatch-react.vercel.app/
 
+https://github.com/user-attachments/assets/50a2701e-214f-40a6-9f0d-f5c8b8e90015
+
 ## 🚀 Features
 
 - Start stopwatch
