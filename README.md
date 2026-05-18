@@ -1,11 +1,12 @@
+
+https://github.com/user-attachments/assets/71723b51-8ca8-4a74-bea3-a75ad0435cf2
 # ⏱️ Neo Stopwatch
 
 A modern stopwatch application built with React featuring precise timing functionality.
 
 ## LIVE Preview: https://stropwatch-react.vercel.app/
 
-https://github.com/user-attachments/assets/50a2701e-214f-40a6-9f0d-f5c8b8e90015
-
+https://github.com/user-attachments/assets/ce88c945-d9b3-4d57-81b9-ac44d9cb287d
 ## 🚀 Features
 
 - Start stopwatch
