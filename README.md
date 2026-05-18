@@ -45,7 +45,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/stropwatch-react.git
+git clone https://github.com/saitamacodex/stropwatch-react.git
 ```
 
 Navigate into the project folder:
