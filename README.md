@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/71723b51-8ca8-4a74-bea3-a75ad0435cf2
 # ⏱️ Neo Stopwatch
 
 A modern stopwatch application built with React featuring precise timing functionality.
