@@ -52,7 +52,7 @@ function StopWatch() {
         <div id="control">
           {isRunning ? (
             <button id="stopBtn" onClick={handleStop}>
-              Stop
+              Pause
             </button>
           ) : (
             <button id="startBtn" onClick={handleStart}>
