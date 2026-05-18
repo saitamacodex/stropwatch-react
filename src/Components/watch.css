@@ -1,68 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #d9d4d4;
-  text-align: center;
+  background: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
 }
 
 h1 {
   font-size: 4rem;
-  font-family: "Arial", sans-serif;
-  color: #413f3f;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffd60a;
+  margin-bottom: 30px;
+  text-shadow: 5px 5px 0px #000;
 }
 
 #container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
-  border: 5px solid;
-  border-radius: 50px;
-  background-color: #fff;
+  background: #ffd60a;
+  padding: 45px;
+  border: 6px solid #000;
+  border-radius: 30px;
+  box-shadow: 14px 14px 0px #000;
 }
 
 #display {
-  font-size: 5rem;
+  width: 100%;
+  min-width: 450px;
+  padding: 30px;
+  margin-bottom: 35px;
+  border: 5px solid #000;
+  border-radius: 20px;
+  background: #1f1f1f;
+  color: #ffd60a;
+  font-size: 4rem;
+  font-weight: 900;
   font-family: monospace;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px #616060;
-  margin-bottom: 25px;
-  width: 650px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 8px 8px 0px #000;
+}
+
+#control {
+  display: flex;
+  gap: 18px;
 }
 
 #control button {
-  font-size: 1.5rem;
-  padding: 10px 20px;
-  margin: 5px;
-  min-width: 125px;
-  border: none;
-  border-radius: 10px;
+  border: 4px solid black;
+  border-radius: 14px;
+  min-width: 140px;
+  padding: 15px 22px;
+  font-size: 1.2rem;
+  font-weight: 800;
   cursor: pointer;
-  color: #fff;
-  transition: background-color 0.2s ease;
+  transition: all 0.15s ease;
+  box-shadow: 6px 6px 0 black;
+}
+
+#control button:hover {
+  transform: translate(-3px, -3px);
+}
+
+#control button:active {
+  transform: translate(6px, 6px);
+  box-shadow: none;
 }
 
 #startBtn {
-  background-color: #039160;
-}
-
-#startBtn:hover {
-  background-color: #03be7c;
+  background: #80ed99;
 }
 
 #stopBtn {
-  background-color: #912203;
-}
-
-#stopBtn:hover {
-  background-color: #be2d04;
+  background: #ff6b6b;
 }
 
 #resetBtn {
-  background-color: #034191;
+  background: #4dabf7;
 }
 
-#resetBtn:hover {
-  background-color: #0a6ae8;
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  #display {
+    min-width: auto;
+    font-size: 2rem;
+  }
+
+  #control {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #control button {
+    width: 100%;
+  }
 }

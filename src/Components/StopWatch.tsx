@@ -32,38 +32,40 @@ function StopWatch() {
   const hours = Math.floor(elapsed / (1000 * 60 * 60));
   const minute = Math.floor((elapsed / (1000 * 60)) % 60);
   const seconds = Math.floor((elapsed / 1000) % 60);
-  const miliseconds = Math.floor((elapsed % 1000) / 10);
+  const milliseconds = Math.floor((elapsed % 1000) / 10);
 
   const pad = function (n: number) {
     return String(n).padStart(2, "0");
   };
 
   return (
-    <>
-      <h1>Stopwatch</h1>
+    <div className="app">
+      <h1 className="title">⏱ Stopwatch</h1>
+
       <div id="container">
         <div id="display">
           <p>
-            {pad(hours)}:{pad(minute)}:{pad(seconds)}:{pad(miliseconds)}
+            {pad(hours)}:{pad(minute)}:{pad(seconds)}:{pad(milliseconds)}
           </p>
         </div>
 
         <div id="control">
           {isRunning ? (
             <button id="stopBtn" onClick={handleStop}>
-              stop
+              Stop
             </button>
           ) : (
             <button id="startBtn" onClick={handleStart}>
               Start
             </button>
           )}
+
           <button id="resetBtn" onClick={handleReset}>
             Reset
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
